@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: mvn package
+- script: mvn package -DskipTests=true
   displayName: 'Run a one-line script'
 
 - script: |
